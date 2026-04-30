@@ -1,0 +1,12 @@
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated files
+test_output.cfg
+test_output.dat
+test_output_filtered.pcapng
+```
