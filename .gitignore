@@ -1,12 +1,1 @@
-```gitignore
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Generated files
-test_output.cfg
-test_output.dat
-test_output_filtered.pcapng
-```
+Nothing needs to be added to .gitignore since only a Python source file (`iec61850_recorder.py`) was modified and no build artifacts, dependencies, or temporary files were included in the changes.

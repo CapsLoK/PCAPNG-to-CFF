@@ -32,12 +32,12 @@ import socket
 try:
     from scapy.all import (
         rdpcap, wrpcap, sniff, Ether, Dot1Q, Raw,
-        get_if_list, get_iface_raw_addr
+        get_if_list
     )
     SCAPY_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     SCAPY_AVAILABLE = False
-    print("Warning: scapy not available. Live capture mode will not work.")
+    print(f"Warning: scapy not available. Live capture mode will not work. Error: {e}")
 
 
 @dataclass
